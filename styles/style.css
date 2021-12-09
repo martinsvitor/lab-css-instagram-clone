@@ -3,8 +3,118 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
-body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+* { 
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+html{
+  background-image: url(../images/bgtile.png);
+  background-color: #F5F6F8;
+  background-repeat: repeat-x;
+  background-size: 50% 40%;
+  
+}
+body {
+  min-height: 100vh;
+  width: auto;
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#whole_body{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.phone{
+  height: 70vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex: 3;
+  
+}
+#main_container{
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  
+}
+#top_nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+  
+}
+.login_btn{
+  color: #fff;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bgtile.png);
+  background: linear-gradient(1turn, #4E799C, #4a6c8a, #4E799C);
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 15vh;
+  gap: 5px;
+  padding: 5px;
+}
+.logo{
+  height: 10vh;
+  width: auto;
+}
+.home{
+  height: 2.8vh;
+  width: 1.5vw;
+}
+#text_div{
+  
+  background-color: #fff;
+  background-image: url(../images/frame.png);
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  height: 60vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: left;
+  ;
+}
+h2{
+  color: #06365f;
+  font-size: 2rem;
+  text-align: left;
+  margin: 10px;
+}
+#text_div p{
+  margin: 10px;
+  
+
+}
+#apps{
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+}
+#footer_nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;  
 }
